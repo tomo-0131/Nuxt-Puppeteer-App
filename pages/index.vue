@@ -57,8 +57,11 @@
               nuxt
               to="/scraping"
             >
+
               SCRAPING!
+
             </v-btn>
+
           </v-row>
         </v-card-actions>
       </v-card>
