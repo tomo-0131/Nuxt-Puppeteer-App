@@ -1,0 +1,48 @@
+<template>
+  <div id="tabs">
+    <v-card color="basil">
+      <v-tabs
+        v-model="tab"
+        background-color="transparent"
+        color="info"
+        grow
+      >
+        <v-tab
+          v-for="item in items"
+            max-width="200px"
+          :key="item.tab"
+        >
+          {{ item.tab }}
+        </v-tab>
+      </v-tabs>
+    <v-row justify="center" align="center">
+      <v-tabs-items v-model="tab">
+        <v-tab-item
+          v-for="item in items"
+          :key="item.tab"
+        >
+          <v-card
+            flat
+          >
+            <v-card-text>{{ item.content }}</v-card-text>
+          </v-card>
+        </v-tab-item>
+      </v-tabs-items>
+    </v-row>
+    </v-card>
+  </div>
+</template>
+
+<script>
+export default {
+  data(){
+    return {
+      tab: null,
+      items: [
+        { tab: 'What is Scraping?', content: '”Scraping”” means collecting data and processing it so that it is easy to use.' },
+        { tab: 'Tech Stack', content: 'Nuxt.js, Vuetify, Puppeteer' },
+      ],
+    }
+  },
+}
+</script>
