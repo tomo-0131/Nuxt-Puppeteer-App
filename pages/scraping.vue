@@ -19,7 +19,6 @@
 
           </tbody>
         </table>
-        <button　@click="reload">RELOAD</button>
       </div>
     </div>
   </div>
