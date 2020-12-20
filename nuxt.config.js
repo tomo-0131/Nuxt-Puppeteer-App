@@ -4,9 +4,11 @@ export default {
   // Disable server-side rendering (https://go.nuxtjs.dev/ssr-mode)
   ssr: false,
 
-  serverMiddleware: [
-    '~/server',
-  ],
+  serverMiddleware: ['~/api'],
+
+  //serverMiddleware: [
+    //{path: '/api', handler: '~/server/api.js'}
+  //],
 
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
