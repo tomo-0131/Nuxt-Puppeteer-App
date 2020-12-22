@@ -4,7 +4,7 @@ export default {
   // Disable server-side rendering (https://go.nuxtjs.dev/ssr-mode)
   ssr: false,
 
-  serverMiddleware: ['~/api'],
+  //serverMiddleware: ['~/api'],
 
   //serverMiddleware: [
     //{path: '/api', handler: '~/server/api.js'}
@@ -47,10 +47,26 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
+    '@nuxtjs/proxy'
   ],
 
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)
-  axios: {},
+  axios: {
+    proxy:true,
+  },
+
+  server: {
+    port: 3000, // デフォルト: 3000
+    host: 'localhost' // デフォルト: localhost
+  },
+  //proxy: {
+    //'/api': {
+      //target: 'http://localhost:5000/',
+      //pathRewrite: {
+        //'^/api' : '/'
+        //}
+      //}
+  //},
 
   // Vuetify module configuration (https://go.nuxtjs.dev/config-vuetify)
   vuetify: {
