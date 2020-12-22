@@ -1,46 +1,30 @@
 <template>
-  <v-row justify="center" align="center">
-    <v-col cols="12" sm="9" md="6">
-      <v-card elevation="2" height="470px">
-        <v-img
-          src="https://res.fashionsnap.com/image/upload/f_auto,q_auto/asset/collection/images/2020/08/sacai-21ss-pre-001.jpg?1607036664240"
-          height="200px"
-        ></v-img>
-        <div>
-          <v-card-title class="headline">
-            <h5 class="scraping-head">S C R A P I I N G</h5>
-          </v-card-title>
-        </div>
-        <div>
-          <TabContents />
-          <br />
-          <v-card-actions>
-            <v-row justify="center" align="center">
-              <v-btn
-                class="v-btn-scraping"
-                outlined
-                color="Yellow"
-                elevation="5"
-                nuxt
-                to="/api/users"
-              >
-                SCRAPING!
-              </v-btn>
-            </v-row>
-          </v-card-actions>
-          <SoContentsTable />
-        </div>
-      </v-card>
-    </v-col>
-  </v-row>
+  <v-card class="mx-auto" max-width="500" max-height="500">
+    <br />
+    <v-list-item three-line>
+      <div class="scraping-farfetch">
+        <h5>ID：{{ items.id }}</h5>
+        <br />
+        <h5>ブランド名：{{ items.brandName }}</h5>
+        <br />
+        <h5>アイテム名：{{ items.itemName }}</h5>
+        <br />
+        <h5>価格：￥{{ items.price }} (税込)</h5>
+        <br />
+        <h5>素材：{{ items.material }}</h5>
+        <br />
+        <h5>ブランドスタイルID：{{ items.brandStyleId }}</h5>
+      </div>
+    </v-list-item>
+    <br />
+  </v-card>
 </template>
 
-<style>
-.scraping-head {
-  margin: 0 auto;
-}
-
-.v-btn-scraping:hover {
-  color: #dd9638;
-}
-</style>
+<script>
+export default {
+  async asyncData({ $axios }) {
+    const items = await $axios.$get("http://localhost:5000");
+    return { items };
+  },
+};
+</script>
