@@ -6,6 +6,7 @@
         <h5>ID：{{ items.id }}</h5>
         <br />
         <h5>商品画像URL：{{ items.imageUrl }}</h5>
+        <br />
         <h5>ブランド名：{{ items.brandName }}</h5>
         <br />
         <h5>アイテム名：{{ items.itemName }}</h5>
