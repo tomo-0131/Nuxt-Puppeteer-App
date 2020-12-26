@@ -1,7 +1,12 @@
 const puppeteer = require('puppeteer');
+const express = require('express');
 
 (async () => {
   const browser = await puppeteer.launch({
+    args: [
+      '--no-sandbox',
+      '--disable-setuid-sandbox',
+    ],
     headless: false,
     slowMo: 50,
   });
@@ -17,7 +22,7 @@ const puppeteer = require('puppeteer');
   let farfetchItemMaterial = "#panelInner-0 > div > div:nth-child(2) > div > div:nth-child(1) > p";
   let farfetchItemBrandStyleId = "#panelInner-0 > div > div:nth-child(2) > div > div:nth-child(3) > p > span";
 
-  const name = await page.$eval(farfetchBrandName, item => {
+  const brandName = await page.$eval(farfetchBrandName, item => {
     return item.textContent;
   });
 
@@ -37,7 +42,7 @@ const puppeteer = require('puppeteer');
     return item.textContent;
   });
 
-  console.log(name);
+  console.log(brandName);
   console.log(itemName);
   console.log(price);
   console.log(material);
