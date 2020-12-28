@@ -34,7 +34,7 @@
 <script>
 export default {
   async asyncData({ $axios }) {
-    const items = await $axios.$get("http://localhost:5000/");
+    const items = await $axios.$get("https://api-nuxt-puppeteer.netlify.app/");
     return { items };
   },
 };
