@@ -1,6 +1,8 @@
 const puppeteer = require('puppeteer');
-
 const browserFetcher = puppeteer.createBrowserFetcher();
+
+const express = require('express');
+const app = express();
 
 const mysql      = require('mysql');
 const connection = mysql.createConnection({
@@ -65,13 +67,24 @@ const connection = mysql.createConnection({
       if(err) throw err;
       console.log("1 recoad inserted");
   });
-
-
-  console.log(brandName);
-  console.log(itemName);
-  console.log(price);
-  console.log(material);
-  console.log(brandStyleId);
-
+  //console.log(brandName);
+  //console.log(itemName);
+  //console.log(price);
+  //console.log(material);
+  //console.log(brandStyleId);
   })
 })();
+
+app.get('/', function (req, res) {
+  res.set({ 'Access-Control-Allow-Origin': '*' });
+  connection.query('select * from scraping order by field1 desc limit 1;', function (error, results) {
+    if (error) throw error;
+    res.send(results[0]
+);
+  });
+});
+
+app.listen(5000, function () {
+  console.log('Example app listening on port 5000!');
+});
+
