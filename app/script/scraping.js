@@ -67,22 +67,12 @@ const connection = mysql.createConnection({
       if(err) throw err;
       console.log("1 recoad inserted");
   });
-  //console.log(brandName);
-  //console.log(itemName);
-  //console.log(price);
-  //console.log(material);
-  //console.log(brandStyleId);
   })
 })();
 
-app.get('/', function (req, res) {
-  res.set({ 'Access-Control-Allow-Origin': '*' });
-  connection.query('select * from scraping order by field1 desc limit 1;', function (error, results) {
-    if (error) throw error;
-    res.send(results[0]
-);
-  });
-});
+app.get('/api', (req, res) => {
+  Scraping.findByPk(31).then(scrapings => res.json(scrapings))
+})
 
 app.listen(5000, function () {
   console.log('Example app listening on port 5000!');
