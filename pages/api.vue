@@ -54,6 +54,9 @@
           </v-expansion-panel>
         </v-expansion-panels>
         <br />
+        <v-btn @click="reload" class="ma-2" dark color="yellow darken-2">
+          <v-icon>mdi-reload</v-icon></v-btn
+        >
         <v-btn
           class="ma-2"
           color="blue lighten-1"
@@ -77,6 +80,11 @@ export default {
     return {
       items,
     };
+  },
+  methods: {
+    reload() {
+      location.reload();
+    },
   },
 };
 </script>
