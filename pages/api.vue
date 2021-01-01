@@ -59,7 +59,7 @@
         >
         <v-btn
           class="ma-2"
-          color="blue lighten-1"
+          color="light-green darken-1"
           dark
           elevation="5"
           nuxt
