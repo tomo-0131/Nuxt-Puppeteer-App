@@ -13,7 +13,7 @@
       <v-row justify="center" align="center">
         <v-btn
           class="ma-1"
-          color="yellow darken-4"
+          color="light-green darken-1"
           dark
           elevation="5"
           nuxt
