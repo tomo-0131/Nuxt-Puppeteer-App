@@ -1,7 +1,12 @@
 <template>
   <div id="tabs">
     <v-card color="basil">
-      <v-tabs v-model="tab" background-color="transparent" color="info" grow>
+      <v-tabs
+        v-model="tab"
+        background-color="transparent"
+        color="light-green darken-1"
+        grow
+      >
         <v-tab v-for="item in items" max-width="200px" :key="item.tab">
           {{ item.tab }}
         </v-tab>
