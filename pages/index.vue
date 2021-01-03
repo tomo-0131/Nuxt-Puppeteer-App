@@ -16,18 +16,44 @@
         <h3>SACAI</h3>
       </v-card>
       <br />
-      <v-container class="grey lighten-5">
-        <v-row
-          v-for="n in 2"
-          :key="n"
-          :class="n === 1 ? 'mb-6' : ''"
-          no-gutters
-        >
-          <v-col v-for="k in n + 1" :key="k">
-            <v-card class="pa-2" outlined tile> {{ k }} of {{ n + 1 }} </v-card>
-          </v-col>
-        </v-row>
-      </v-container>
+      <v-divider></v-divider>
+      <br />
+      <h5　class="grey--text text--darken-2 text-center">
+        Comme des
+        Garçonsで勤めた経歴を持つ阿部千登勢が1999年に立ち上げたブランド。
+      </h5>
+      <br />
+      <v-row>
+        <v-img
+          lazy-src="https://cdn-images.farfetch-contents.com/15/46/69/99/15466999_27973921_1000.jpg"
+          cols="6"
+          sm="4"
+          width="300"
+          height="300"
+          :href="https://yahoo.com"
+          src="https://cdn-images.farfetch-contents.com/15/46/69/99/15466999_27973921_1000.jpg"
+        ></v-img>
+        <v-divider vertical></v-divider>
+        <v-img
+          lazy-src="https://cdn-images.farfetch-contents.com/15/46/69/99/15466999_27973921_1000.jpg"
+          cols="6"
+          sm="4"
+          width="300"
+          height="300"
+          src="https://cdn-images.farfetch-contents.com/15/46/69/99/15466999_27973921_1000.jpg"
+        ></v-img>
+        <v-divider vertical></v-divider>
+        <br />
+        <v-img
+          lazy-src="https://cdn-images.farfetch-contents.com/15/46/69/99/15466999_27973921_1000.jpg"
+          cols="6"
+          sm="4"
+          width="300"
+          height="300"
+          src="https://cdn-images.farfetch-contents.com/15/46/69/99/15466999_27973921_1000.jpg"
+        ></v-img>
+        <v-divider vertical></v-divider>
+      </v-row>
       <br />
       <TabContents />
       <div class="container"></div>
