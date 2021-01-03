@@ -30,7 +30,7 @@
           sm="4"
           width="300"
           height="300"
-          :href="https://yahoo.com"
+          href="https://yahoo.com"
           src="https://cdn-images.farfetch-contents.com/15/46/69/99/15466999_27973921_1000.jpg"
         ></v-img>
         <v-divider vertical></v-divider>
