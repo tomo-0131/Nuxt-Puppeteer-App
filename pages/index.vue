@@ -23,38 +23,7 @@
         Garçonsで勤めた経歴を持つ阿部千登勢が1999年に立ち上げたブランド。
       </h5>
       <br />
-      <v-row>
-        <v-img
-          lazy-src="https://cdn-images.farfetch-contents.com/15/46/69/99/15466999_27973921_1000.jpg"
-          cols="6"
-          sm="4"
-          width="300"
-          height="300"
-          href="https://yahoo.com"
-          src="https://cdn-images.farfetch-contents.com/15/46/69/99/15466999_27973921_1000.jpg"
-        ></v-img>
-        <v-divider vertical></v-divider>
-        <br>
-        <v-img
-          lazy-src="https://cdn-images.farfetch-contents.com/15/46/69/99/15466999_27973921_1000.jpg"
-          cols="6"
-          sm="4"
-          width="300"
-          height="300"
-          src="https://cdn-images.farfetch-contents.com/15/46/69/99/15466999_27973921_1000.jpg"
-        ></v-img>
-        <v-divider vertical></v-divider>
-        <br />
-        <v-img
-          lazy-src="https://cdn-images.farfetch-contents.com/15/46/69/99/15466999_27973921_1000.jpg"
-          cols="6"
-          sm="4"
-          width="300"
-          height="300"
-          src="https://cdn-images.farfetch-contents.com/15/46/69/99/15466999_27973921_1000.jpg"
-        ></v-img>
-        <v-divider vertical></v-divider>
-      </v-row>
+      <ImageList />
       <br />
       <TabContents />
 
