@@ -34,6 +34,7 @@
           src="https://cdn-images.farfetch-contents.com/15/46/69/99/15466999_27973921_1000.jpg"
         ></v-img>
         <v-divider vertical></v-divider>
+        <br>
         <v-img
           lazy-src="https://cdn-images.farfetch-contents.com/15/46/69/99/15466999_27973921_1000.jpg"
           cols="6"
@@ -56,6 +57,7 @@
       </v-row>
       <br />
       <TabContents />
+
       <div class="container"></div>
       <v-row justify="center" align="center">
         <v-btn
