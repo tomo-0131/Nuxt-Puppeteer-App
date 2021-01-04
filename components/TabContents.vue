@@ -11,6 +11,7 @@
           {{ item.tab }}
         </v-tab>
       </v-tabs>
+      <br />
       <v-row justify="center" align="center">
         <v-tabs-items v-model="tab">
           <v-tab-item v-for="item in items" :key="item.tab">
@@ -33,7 +34,7 @@ export default {
         {
           tab: "What is Scraping?",
           content:
-            "”Scraping” means collecting data and processing it so that it is easy to use.",
+            "Scraping means collecting data and processing it so that it's easy to use.",
         },
         {
           tab: "Tech Stack",
