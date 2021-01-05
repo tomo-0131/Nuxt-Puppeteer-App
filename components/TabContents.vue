@@ -33,8 +33,7 @@ export default {
       items: [
         {
           tab: "What is Scraping?",
-          content:
-            "Scraping means collecting data and processing it so that it's easy to use.",
+          content: "Scraping means collecting data and processing it.",
         },
         {
           tab: "Tech Stack",
