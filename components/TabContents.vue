@@ -33,8 +33,7 @@ export default {
       items: [
         {
           tab: "ABOUT",
-          content:
-            "This is a website that collects fashion brands from all over the world.",
+          content: "Collects fashion brands from all over the world.",
         },
         {
           tab: "Tech Stack",
