@@ -32,8 +32,9 @@ export default {
       tab: null,
       items: [
         {
-          tab: "What is Scraping?",
-          content: "Scraping means collecting data and processing it.",
+          tab: "ABOUT",
+          content:
+            "This is a website that collects fashion brands from all over the world.",
         },
         {
           tab: "Tech Stack",
