@@ -22,8 +22,12 @@
         Comme des
         Garçonsで勤めた経歴を持つ阿部千登勢が1999年に立ち上げたブランド。
       </h5>
+      <br>
+      <v-divider></v-divider>
       <br />
       <ImageList />
+      <br>
+      <v-divider></v-divider>
       <br />
       <TabContents />
 
