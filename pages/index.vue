@@ -18,15 +18,15 @@
       <br />
       <v-divider></v-divider>
       <br />
-      <h5　class="grey--text text--darken-2 text-center">
+      <h5 class="grey--text text--darken-2 text-center">
         Comme des
         Garçonsで勤めた経歴を持つ阿部千登勢が1999年に立ち上げたブランド。
       </h5>
-      <br>
+      <br />
       <v-divider></v-divider>
       <br />
       <ImageList />
-      <br>
+      <br />
       <v-divider></v-divider>
       <br />
       <TabContents />
@@ -46,6 +46,7 @@
         </v-btn>
         <br />
       </v-row>
+      <br />
     </v-col>
   </v-row>
 </template>
