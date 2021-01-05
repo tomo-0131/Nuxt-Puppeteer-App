@@ -1,7 +1,7 @@
 <template>
   <div class="header">
     <div class="header-inner">
-      <h1 class="title">FARFETCH</h1>
+      <h1 class="title">P L I M E R C Y</h1>
     </div>
   </div>
 </template>
