@@ -15,7 +15,7 @@
         <v-fade-transition mode="out-in">
           <v-layout justify-space-between wrap>
             <v-row justify="center">
-              <v-col cols="6" lg="4" xs="4" class="pa-5">
+              <v-col cols="6" lg="6" xs="4" class="pa-5">
                 <nuxt-link to="/studionicholson">
                   <v-img
                     lazy-src="https://picsum.photos/id/11/10/6"
