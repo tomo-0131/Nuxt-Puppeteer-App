@@ -9,7 +9,6 @@
           <v-row justify="center">
             <v-img
               class="justify-center"
-              lazy-src="https://picsum.photos/id/11/10/6"
               max-height="181"
               max-width="202"
               v-bind:src="require('@/assets/image/sacai.png')"
