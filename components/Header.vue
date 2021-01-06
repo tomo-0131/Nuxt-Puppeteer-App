@@ -1,10 +1,10 @@
 <template>
-  <v-tool-bar>
+  <v-tool-bar dense fixed>
     <br />
-    <!-- <v-app-bar-nav-icon @click="drawer = true"></v-app-bar-nav-icon> !-->
     <v-toolbar-title class="text-center"> P L I M E</v-toolbar-title>
     <br />
-    <v-tabs centered v-model="tab">
+
+    <v-tabs color="green" centered v-model="tab">
       <v-tab
         v-for="(menuItem, index) in menuItems"
         :key="index"
@@ -13,10 +13,12 @@
         {{ menuItem.name }}
       </v-tab>
     </v-tabs>
+
     <v-navigation-drawer v-model="drawer" temporary fixed>
       <v-list nav dense>
         <v-list-item-group>
           <v-list-item
+            color="green"
             v-for="(menuItem, index) in menuItems"
             :key="index"
             :to="menuItem.url"
