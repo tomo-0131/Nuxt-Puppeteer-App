@@ -7,23 +7,23 @@
       ></v-img>
 
       <br />
-
-      <v-divider></v-divider>
-
-      <v-card class="text-center" color="light-green" dark elevation="3">
-        <h3>SACAI</h3>
-      </v-card>
+      <div class="text-center">
+        <h3>S A C A I</h3>
+      </div>
 
       <br />
 
       <v-divider></v-divider>
 
       <br />
+      <div style="white-space: pre-wrap; word-wrap: break-word">
+        <h5 class="grey--text text--darken-2 text-center">
+          Comme des Garçonsで勤めた経歴を持つ阿部千登勢が
+          1999年に立ち上げたブランド。
+          異素材をドッキングさせたデザインがアイコニックである。
+        </h5>
+      </div>
 
-      <h5 class="grey--text text--darken-2 text-center">
-        Comme des
-        Garçonsで勤めた経歴を持つ阿部千登勢が1999年に立ち上げたブランド。
-      </h5>
       <br />
 
       <v-divider></v-divider>

@@ -6,17 +6,19 @@
         height="210px"
       ></v-img>
       <br />
-      <v-divider></v-divider>
-      <v-card class="text-center" color="light-green" dark elevation="3">
-        <h3>STUDIO NICHOLSON</h3>
-      </v-card>
+      <div class="text-center">
+        <h3>S T U D I O　N I C H O L S O N</h3>
+      </div>
       <br />
       <v-divider></v-divider>
       <br />
-      <h5 class="grey--text text--darken-2 text-center">
-        Comme des
-        Garçonsで勤めた経歴を持つ阿部千登勢が1999年に立ち上げたブランド。
-      </h5>
+      <div style="white-space: wrap; word-wrap: break-word">
+        <h5 class="grey--text text--darken-2 text-center">
+          STUDIO NICHOLSON (WOMANS) を手掛けていた
+          ニック・ウェイクマンが17AWからメンズラインを開始。
+          建築からインスピレーションを受けてデザインに反映されることが多い。
+        </h5>
+      </div>
       <br />
       <v-divider></v-divider>
       <br />
