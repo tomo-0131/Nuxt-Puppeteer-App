@@ -8,7 +8,7 @@
       <v-img
         class="justify-center"
         lazy-src="https://picsum.photos/id/11/10/"
-        max-height="600"
+        max-height="400"
         max-width="400"
         src="https://picsum.photos/id/1067/500/300"
       ></v-img>
