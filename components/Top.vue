@@ -10,29 +10,54 @@
       <h3 class="text-center">B R A N D</h3>
       <br />
       <v-divider></v-divider>
-
       <v-container class="fill-height" style="min-height: 284px">
         <v-fade-transition mode="out-in">
           <v-layout justify-space-between wrap>
             <v-row justify="center">
-              <v-col cols="6" lg="6" xs="4" class="pa-5">
+              <v-col cols="6" lg="3" xs="4" class="pa-7">
                 <nuxt-link to="/studionicholson">
                   <v-img
                     lazy-src="https://picsum.photos/id/11/10/6"
                     max-height="181"
-                    max-width="302"
+                    max-width="202"
                     v-bind:src="require('@/assets/image/studionicholson.png')"
                   ></v-img>
                 </nuxt-link>
               </v-col>
 
-              <v-col cols="6" lg="4" xs="4" class="pa-5">
+              <br />
+
+              <v-col cols="6" lg="3" xs="4" class="pa-7">
                 <nuxt-link to="/sacai">
                   <v-img
                     lazy-src="https://picsum.photos/id/11/10/6"
                     max-height="181"
-                    max-width="302"
+                    max-width="202"
                     v-bind:src="require('@/assets/image/sacai.png')"
+                  ></v-img>
+                </nuxt-link>
+              </v-col>
+
+              <br />
+
+              <v-col cols="6" lg="3" xs="4" class="pa-7">
+                <nuxt-link to="/maisonmargiela">
+                  <v-img
+                    lazy-src="https://picsum.photos/id/11/10/6"
+                    max-height="181"
+                    max-width="202"
+                    v-bind:src="require('@/assets/image/maisonmargiela.jpeg')"
+                  ></v-img>
+                </nuxt-link>
+              </v-col>
+
+              <v-col cols="6" lg="2" xs="4" class="pa-8">
+                <nuxt-link to="/mfpen">
+                  <v-img
+                    lazy-src="https://picsum.photos/id/11/10/6"
+                    max-height="181"
+                    max-width="192"
+                    v-bind:src="require('@/assets/image/mfpen.png')"
                   ></v-img>
                 </nuxt-link>
               </v-col>
