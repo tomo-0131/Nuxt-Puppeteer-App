@@ -1,7 +1,9 @@
 <template>
   <v-tool-bar dense fixed>
     <br />
-    <v-toolbar-title class="text-center"> P L I M E</v-toolbar-title>
+    <v-toolbar-title class="text-center">
+      <nuxt-link to="/">P L I M E</nuxt-link>
+    </v-toolbar-title>
     <br />
 
     <v-tabs color="green" centered v-model="tab">
@@ -43,3 +45,10 @@ export default {
   },
 };
 </script>
+
+<style>
+a {
+  text-decoration: none;
+  color: #000000;
+}
+</style>
