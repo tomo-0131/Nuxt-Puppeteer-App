@@ -33,7 +33,7 @@ export default {
       items: [
         {
           tab: "ABOUT",
-          content: "Collects fashion brands from all over the world.",
+          content: "Fashion brands from all over the world.",
         },
         {
           tab: "Tech Stack",
