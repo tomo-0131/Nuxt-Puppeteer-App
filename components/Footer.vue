@@ -1,5 +1,5 @@
 <template>
-  <v-footer absolute dark>
+  <v-footer>
     <div class="footer">Copyright PLIME 2020. 　All right reserved</div>
   </v-footer>
 </template>
