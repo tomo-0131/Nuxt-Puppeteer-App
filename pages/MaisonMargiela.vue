@@ -2,7 +2,9 @@
   <v-container>
     <v-row justify="center">
       <v-col cols="10">
-        <br />
+        <v-row justify="center">
+          <v-breadcrumbs :items="items" divider="/"></v-breadcrumbs>
+        </v-row>
         <v-col cols="12" lg="12" xs="4" class="pa-2">
           <v-row justify="center">
             <v-img
@@ -45,4 +47,23 @@
 //return { items };
 //},
 //};
+</script>
+
+<script>
+export default {
+  data: () => ({
+    items: [
+      {
+        text: "home",
+        disabled: false,
+        href: "/",
+      },
+      {
+        text: "maison margirla",
+        disabled: false,
+        href: "/maisonmargiela",
+      },
+    ],
+  }),
+};
 </script>
