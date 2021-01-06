@@ -4,17 +4,15 @@
       <v-col cols="10">
         <br />
         <v-col cols="12" lg="12" xs="4" class="pa-2">
-          <nuxt-link to="/maisonmargiela">
-            <v-row justify="center">
-              <v-img
-                class="justify-center"
-                lazy-src="https://picsum.photos/id/11/10/6"
-                max-height="181"
-                max-width="202"
-                v-bind:src="require('@/assets/image/maisonmargiela.jpeg')"
-              ></v-img>
-            </v-row>
-          </nuxt-link>
+          <v-row justify="center">
+            <v-img
+              class="justify-center"
+              lazy-src="https://picsum.photos/id/11/10/6"
+              max-height="181"
+              max-width="202"
+              v-bind:src="require('@/assets/image/maisonmargiela.jpeg')"
+            ></v-img>
+          </v-row>
         </v-col>
         <br />
         <v-divider></v-divider>
