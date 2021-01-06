@@ -17,7 +17,6 @@
               <v-col cols="6" lg="3" xs="4" class="pa-7">
                 <nuxt-link to="/studionicholson">
                   <v-img
-                    lazy-src="https://picsum.photos/id/11/10/6"
                     max-height="181"
                     max-width="202"
                     v-bind:src="require('@/assets/image/studionicholson.png')"
@@ -30,7 +29,6 @@
               <v-col cols="6" lg="3" xs="4" class="pa-7">
                 <nuxt-link to="/sacai">
                   <v-img
-                    lazy-src="https://picsum.photos/id/11/10/6"
                     max-height="181"
                     max-width="202"
                     v-bind:src="require('@/assets/image/sacai.png')"
@@ -43,7 +41,6 @@
               <v-col cols="6" lg="3" xs="4" class="pa-7">
                 <nuxt-link to="/maisonmargiela">
                   <v-img
-                    lazy-src="https://picsum.photos/id/11/10/6"
                     max-height="181"
                     max-width="202"
                     v-bind:src="require('@/assets/image/maisonmargiela.jpeg')"
@@ -54,7 +51,6 @@
               <v-col cols="6" lg="2" xs="4" class="pa-8">
                 <nuxt-link to="/mfpen">
                   <v-img
-                    lazy-src="https://picsum.photos/id/11/10/6"
                     max-height="181"
                     max-width="192"
                     v-bind:src="require('@/assets/image/mfpen.png')"
