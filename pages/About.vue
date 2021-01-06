@@ -7,7 +7,7 @@
     <v-row justify="center">
       <v-img
         class="justify-cent1er"
-        lazy-src="https://picsum.photos/id/11/10/"
+        lazy-src="https://picsum.photos/id/1067/500/300"
         max-height="400"
         max-width="300"
         src="https://picsum.photos/id/1067/500/300"
@@ -35,7 +35,7 @@
     <v-row justify="center">
       <v-img
         class="justify-center"
-        lazy-src="https://picsum.photos/id/11/10/6"
+        lazy-src="https://picsum.photos/id/147/500/300"
         max-height="400"
         max-width="300"
         src="https://picsum.photos/id/147/500/300?greyscale"
