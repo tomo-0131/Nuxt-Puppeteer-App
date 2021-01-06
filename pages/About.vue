@@ -21,7 +21,7 @@
         PLIMEは世界中のファッションブランドを集めた、ファッション総合ECサイトです。
         <div class="text-center">
           全てのファッションユーザー対し、最新のweb技術による無駄のない洗練された
-          ユーザー体験をお届けするため新たなファッションサービスを提供します。
+          ユーザー体験をお届けするため、革新的なファッションサービスを提供します。
         </div>
         <div class="text-center" font-size="10">
           PLIME is a comprehensive fashion e-commerce site that collects fashion
