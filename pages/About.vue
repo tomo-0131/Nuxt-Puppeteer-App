@@ -6,10 +6,10 @@
     <br />
     <v-row justify="center">
       <v-img
-        class="justify-center"
+        class="justify-cent1er"
         lazy-src="https://picsum.photos/id/11/10/"
         max-height="400"
-        max-width="400"
+        max-width="300"
         src="https://picsum.photos/id/1067/500/300"
       ></v-img>
       <br />
@@ -36,8 +36,8 @@
       <v-img
         class="justify-center"
         lazy-src="https://picsum.photos/id/11/10/6"
-        max-height="600"
-        max-width="400"
+        max-height="400"
+        max-width="300"
         src="https://picsum.photos/id/147/500/300?greyscale"
       ></v-img>
       <br />
