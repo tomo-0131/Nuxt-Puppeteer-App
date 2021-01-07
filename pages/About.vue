@@ -18,22 +18,27 @@
       <div style="white-space: wrap; word-wrap: break-word">
         <br />
         <h2 class="text-center">P L I M E</h2>
+        <br />
         <div class="text-center">
-          PLIMEは世界中のファッションブランドを集めた、ファッション総合ECサイトです。
+          PLIMEは世界中のファッションブランドを集めた、<br />ファッション総合ECサイトです。
         </div>
         <div class="text-center">
           全てのファッションユーザー対し、
-          最新のweb技術による無駄のない洗練された
-          ユーザー体験をお届けするため、革新的なファッションサービスを提供します。
+          最新のweb技術による無駄のない洗練された<br />
+          ユーザー体験をお届けするため、革新的な<br />ファッションサービスを提供します。
         </div>
+        <br />
         <div class="text-center">
-          PLIME is a comprehensive fashion e-commerce site that collects fashion
-          brands from all over the world. We will provide new fashion services
-          to all fashion users in order to provide a lean and sophisticated user
+          PLIME is a comprehensive fashion <br />e-commerce site that collects
+          fashion brands from all over the world. <br />
+          We will provide new fashion<br />
+          services to all fashion<br />
+          users in order to provide a lean and sophisticated<br />user
           experience with the latest web technology.
         </div>
       </div>
     </v-row>
+    <br />
     <br />
     <v-row justify="center">
       <v-img
