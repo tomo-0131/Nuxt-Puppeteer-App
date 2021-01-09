@@ -14,7 +14,7 @@
       ></v-img>
       <br />
     </v-row>
-    <v-row justify="center">
+    <v-row class="text-center">
       <div style="white-space: wrap; word-wrap: break-word">
         <br />
         <h2 class="text-center">P L I M E</h2>
