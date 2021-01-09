@@ -1,5 +1,8 @@
 <template>
   <v-container>
+    <v-row justify="center">
+      <v-breadcrumbs :items="items" divider="/"></v-breadcrumbs>
+    </v-row>
     <div class="text-center">
       <h2>A B O U T</h2>
     </div>
@@ -53,3 +56,22 @@
     <br />
   </v-container>
 </template>
+
+<script>
+export default {
+  data: () => ({
+    items: [
+      {
+        text: "home",
+        disabled: false,
+        href: "/",
+      },
+      {
+        text: "about",
+        disabled: false,
+        href: "/about",
+      },
+    ],
+  }),
+};
+</script>
