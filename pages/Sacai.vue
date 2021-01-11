@@ -63,6 +63,12 @@
 
 <script>
 export default {
+  async asyncData({ $axios }) {
+    const items = await $axios.$get("http://localhost:5000/api");
+    return {
+      items,
+    };
+  },
   data: () => ({
     items: [
       {
@@ -77,16 +83,5 @@ export default {
       },
     ],
   }),
-};
-</script>
-
-<script>
-export default {
-  async asyncData({ $axios }) {
-    const items = await $axios.$get("http://localhost:5000/api");
-    return {
-      items,
-    };
-  },
 };
 </script>
