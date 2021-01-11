@@ -2,6 +2,9 @@
   <v-container>
     <v-row justify="center">
       <v-col cols="10">
+        <v-row justify="center">
+          <v-breadcrumbs :items="items" divider="/"></v-breadcrumbs>
+        </v-row>
         <v-col cols="12" lg="12" xs="4" class="pa-2">
           <v-row justify="center">
             <v-img
@@ -33,14 +36,14 @@
               class="justify-center"
               max-height="181"
               max-width="202"
-              v-bind:src="items.imageUrl"
+              v-bind:src="texts.imageUrl"
             ></v-img>
           </a>
           <br />
-          <tr v-for="item in items" :key="item.id">
-            <td>{{ item.itemName }}</td>
+          <tr v-for="text in texts" :key="text.id">
+            <td>{{ text.itemName }}</td>
             <br />
-            <td>{{ item.price }}</td>
+            <td>{{ text.price }}</td>
           </tr>
         </div>
 
@@ -64,9 +67,9 @@
 <script>
 export default {
   async asyncData({ $axios }) {
-    const items = await $axios.$get("http://localhost:5000/api");
+    const texts = await $axios.$get("http://localhost:5000/api");
     return {
-      items,
+      texts,
     };
   },
   data: () => ({
@@ -77,9 +80,9 @@ export default {
         href: "/",
       },
       {
-        text: "studio nicholson",
+        text: "sacai",
         disabled: false,
-        href: "/studionicholson",
+        href: "/sacai",
       },
     ],
   }),
