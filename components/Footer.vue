@@ -1,11 +1,10 @@
 <template>
   <v-footer>
-    <div class="footer">Copyright PLIME 2020. 　All right reserved</div>
+    <v-col class="text-center" cols="12">
+      <div class="footer" padless>
+        {{ new Date().getFullYear() }} — Copyright PLIME Inc. All rights
+        reserved
+      </div>
+    </v-col>
   </v-footer>
 </template>
-
-<style>
-.footer {
-  margin: auto;
-}
-</style>
