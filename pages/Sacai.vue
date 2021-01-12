@@ -40,11 +40,11 @@
             ></v-img>
           </a>
           <br />
-          <tr v-for="text in texts" :key="text.id">
-            <td>{{ text.itemName }}</td>
+          <div v-for="text in texts" :key="text.id">
+            <h5>{{ text.itemName }}</h5>
             <br />
-            <td>{{ text.price }}</td>
-          </tr>
+            <h5>{{ text.price }}</h5>
+          </div>
         </div>
 
         <v-btn
