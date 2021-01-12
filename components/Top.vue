@@ -9,7 +9,9 @@
       <br />
       <h3 class="text-center">B R A N D</h3>
       <br />
+
       <v-divider></v-divider>
+
       <v-container class="fill-height" style="min-height: 284px">
         <v-fade-transition mode="out-in">
           <v-layout justify-space-between wrap>
@@ -64,7 +66,6 @@
 
       <v-divider></v-divider>
       <br />
-      <!--<ImageList />-->
       <br />
       <TabContents />
       <br />
