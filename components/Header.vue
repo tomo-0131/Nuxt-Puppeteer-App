@@ -34,13 +34,24 @@
 </template>
 
 <script>
-import constants from "./constants.js";
-
 export default {
   data() {
     return {
       drawer: false,
-      menuItems: constants.menuItems,
+      menuItems: [
+        {
+          name: "HOME",
+          url: "/",
+        },
+        {
+          name: "ABOUT",
+          url: "/about",
+        },
+        {
+          name: "SERVICE",
+          url: "/service",
+        },
+      ],
     };
   },
 };
