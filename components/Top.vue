@@ -10,11 +10,11 @@
       <h3 class="text-center">B R A N D</h3>
       <br />
 
-      <v-divider></v-divider>
+      <v-divider />
 
       <TopBrandLogo />
 
-      <v-divider></v-divider>
+      <v-divider />
       <br />
       <br />
       <TabContents />
