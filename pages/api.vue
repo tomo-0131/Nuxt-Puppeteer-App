@@ -76,7 +76,7 @@
 <script>
 export default {
   async asyncData({ $axios }) {
-    const items = await $axios.$get("http://localhost:5000/api");
+    const items = await $axios.$get("http://localhost:3000/api");
     return {
       items,
     };
