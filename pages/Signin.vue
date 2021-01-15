@@ -1,48 +1,66 @@
 <template>
-  <div class="login-form">
-    <form @submit.prevent="login">
-      <p class="error" v-if="error">{{ error }}</p>
-      <p>
-        <input type="text" v-model="email" placeholder="email" name="email" />
-      </p>
-      <p>
-        <input
-          type="text"
+  <v-card elevation="2" class="text-center mx-auto my-8" max-width="574">
+    <div class="container">
+      <h2>ログイン</h2>
+      <br />
+      <form class="login-form">
+        <v-text-field
+          v-model="email"
+          prepend-icon="mdi-account-circle"
+          label="メールアドレス"
+          required
+        ></v-text-field>
+        <br />
+        <v-text-field
+          prepend-icon="mdi-lock"
           v-model="password"
-          placeholder="password"
-          name="password"
-        />
-      </p>
-      <div class="login-btn">
-        <button type="submit">ログイン</button>
-      </div>
-    </form>
-  </div>
+          label="パスワード"
+          required
+        ></v-text-field>
+        <br />
+        <div class="input-group">
+          <v-btn color="secondary" @click="login()">送信</v-btn>
+          <!--クリックしたらlogin()を発火-->
+        </div>
+      </form>
+    </div>
+  </v-card>
 </template>
 
 <script>
+import axios from "./axios-for-auth";
 export default {
   data() {
     return {
-      error: null,
       email: "",
       password: "",
     };
   },
   methods: {
-    async login() {
-      console.log(this.registeredUser);
-      try {
-        await this.$store.dispatch("login", {
-          email: this.email,
-          password: this.password,
-          authData: this.$store.state.registeredUser,
+    login() {
+      axios
+        .post(
+          "/accounts:signInWithPassword?key=AIzaSyA1iIc8nGONSO3jXUAbQ-ze6WNsZmjUSNM",
+          {
+            email: this.email,
+            password: this.password,
+            returnSecureToken: true,
+          }
+        )
+        .then((response) => {
+          console.log(response);
         });
-        this.$router.push("/");
-      } catch (e) {
-        this.error = e.message;
-      }
+      this.email = "";
+      this.password = "";
+      // トップページに遷移
+      this.$router.push("/");
     },
   },
 };
 </script>
+
+<style>
+.input-group {
+  margin: 5px;
+}
+</style>
