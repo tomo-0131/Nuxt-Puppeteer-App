@@ -48,8 +48,12 @@ export default {
           url: "/about",
         },
         {
-          name: "SERVICE",
-          url: "/service",
+          name: "新規登録",
+          url: "/signup",
+        },
+        {
+          name: "ログイン",
+          url: "/signin",
         },
       ],
     };
