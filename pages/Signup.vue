@@ -1,20 +1,29 @@
 <template>
-  <div class="container">
-    <h2>新規登録</h2>
-    <form class="login-form">
-      <div class="input-group">
-        <label for="email">メールアドレス</label>
-        <input type="email" id="email" v-model="email" />
-      </div>
-      <div class="input-group">
-        <label for="password">パスワード</label>
-        <input type="password" id="password" v-model="password" />
-      </div>
-      <div class="input-group">
-        <button type="button" @click="register()">新規登録</button>
-      </div>
-    </form>
-  </div>
+  <v-card elevation="2" class="text-center mx-auto my-8" max-width="574">
+    <div class="container">
+      <h2>新規登録</h2>
+      <br />
+      <form class="login-form">
+        <v-text-field
+          v-model="email"
+          prepend-icon="mdi-account-circle"
+          label="メールアドレス"
+          required
+        ></v-text-field>
+        <br />
+        <v-text-field
+          v-model="password"
+          prepend-icon="mdi-lock"
+          label="パスワード"
+          required
+        ></v-text-field>
+        <br />
+        <div class="input-group">
+          <v-btn color="secondary" @click="register()">新規登録</v-btn>
+        </div>
+      </form>
+    </div>
+  </v-card>
 </template>
 
 <script>
@@ -40,6 +49,8 @@ export default {
         });
       this.email = "";
       this.password = "";
+      // トップページに遷移
+      this.$router.push("/");
     },
   },
 };
