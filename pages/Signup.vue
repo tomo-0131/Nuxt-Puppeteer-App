@@ -45,12 +45,11 @@ export default {
           returnSecureToken: true,
         })
         .then((response) => {
-          console.log(response); //レスポンスをログに表示
+          this.$store.commit("updateIdToken", response.data.idToken);
+          this.$router.push("/");
         });
       this.email = "";
       this.password = "";
-      // トップページに遷移
-      this.$router.push("/");
     },
   },
 };
