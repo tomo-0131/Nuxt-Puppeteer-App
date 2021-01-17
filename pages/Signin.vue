@@ -48,12 +48,11 @@ export default {
           }
         )
         .then((response) => {
-          console.log(response);
+          this.$store.commit("updateIdToken", response.data.idToken);
+          this.$router.push("/");
         });
       this.email = "";
       this.password = "";
-      // トップページに遷移
-      this.$router.push("/");
     },
   },
 };
