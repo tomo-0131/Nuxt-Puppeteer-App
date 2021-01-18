@@ -21,7 +21,6 @@
         <div class="input-group">
           <v-btn color="secondary" @click="login()">送信</v-btn>
           <LogoutButton />
-          <!--クリックしたらlogin()を発火-->
         </div>
       </form>
     </div>
