@@ -6,10 +6,6 @@ export default {
 
   //serverMiddleware: ['~/api'],
 
-  //serverMiddleware: [
-    //{path: '/api', handler: '~/server/api.js'}
-  //],
-
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
     titleTemplate: '%s - nuxt-scraping-app',
@@ -59,14 +55,7 @@ export default {
     port: 3000, // デフォルト: 3000
     host: 'localhost' // デフォルト: localhost
   },
-  //proxy: {
-    //'/api': {
-      //target: 'http://localhost:5000/',
-      //pathRewrite: {
-        //'^/api' : '/'
-        //}
-      //}
-  //},
+
 
   // Vuetify module configuration (https://go.nuxtjs.dev/config-vuetify)
   vuetify: {
