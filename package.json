@@ -1,5 +1,5 @@
 {
-  "name": "nuxt-scraping-app",
+  "name": "frontend",
   "version": "1.0.0",
   "private": true,
   "scripts": {
@@ -13,19 +13,11 @@
     "@nuxtjs/proxy": "^2.1.0",
     "animate.css": "^4.1.1",
     "body-parser": "^1.19.0",
-    "consola": "^2.15.0",
     "core-js": "^3.6.5",
-    "cors": "^2.8.5",
-    "express": "^4.17.1",
-    "mysql": "^2.18.1",
-    "mysql2": "^2.2.5",
     "nuxt": "^2.14.6",
-    "puppeteer": "^5.5.0",
     "request": "^2.88.2",
-    "sequelize": "^6.3.5",
     "sequelize-cli": "^6.2.0",
     "vuex": "^3.6.0",
-    "wowjs": "^1.1.3"
   },
   "devDependencies": {
     "@nuxtjs/vuetify": "^1.11.2"
