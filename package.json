@@ -13,7 +13,6 @@
     "@nuxtjs/proxy": "^2.1.0",
     "body-parser": "^1.19.0",
     "nuxt": "^2.14.6",
-    "sequelize-cli": "^6.2.0",
     "vuex": "^3.6.0"
   },
   "devDependencies": {
