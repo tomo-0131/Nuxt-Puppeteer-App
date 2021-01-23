@@ -28,7 +28,7 @@
 </template>
 
 <script>
-import axios from "./axios-for-auth";
+import axios from "./auth/axios-for-auth";
 export default {
   data() {
     return {

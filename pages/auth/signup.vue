@@ -27,7 +27,7 @@
 </template>
 
 <script>
-import axios from "./axios-for-auth"; //axiosインスタンスをインポート
+import axios from "./auth/axios-for-auth"; //axiosインスタンスをインポート
 export default {
   data() {
     return {
