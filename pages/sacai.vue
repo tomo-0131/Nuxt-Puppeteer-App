@@ -28,21 +28,11 @@
             ></v-img>
           </a>
           <br />
-          <div v-for="text in texts" :key="text.id">
-            <h5>{{ text.itemName }}</h5>
-            <br />
-            <h5>{{ text.price }}</h5>
-          </div>
+          <v-divider></v-divider>
+          <ImageList />
         </div>
 
-        <v-btn
-          class="ma-2"
-          color="light-green darken-1"
-          elevation="5"
-          dark
-          nuxt
-          to="/"
-        >
+        <v-btn class="ma-2" color="light-green darken-1" elevation="5" dark nuxt to="/">
           <v-icon dark left> mdi-arrow-left </v-icon>
           BACK
         </v-btn>
@@ -54,11 +44,6 @@
 
 <script>
 export default {
-  async asyncData({ $axios }) {
-    const texts = await $axios.$get("http://localhost:3000/api");
-    return {
-      texts,
-    };
   },
   data: () => ({
     items: [
