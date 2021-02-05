@@ -8,8 +8,8 @@ export default {
 
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
-    titleTemplate: '%s - tomoyuki-kumagai',
-    title: 'tomoyuki-kumagai',
+    titleTemplate: '%s - shops',
+    title: 'shops',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
