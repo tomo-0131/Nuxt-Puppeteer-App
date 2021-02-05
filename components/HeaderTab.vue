@@ -2,7 +2,7 @@
   <v-tool-bar dense fixed>
     <br />
     <v-toolbar-title class="text-center">
-      <nuxt-link to="/">TOMOYUKI KUMAGAI</nuxt-link>
+      <nuxt-link to="/">SHOPS</nuxt-link>
     </v-toolbar-title>
     <br />
     <v-tabs color="green" centered v-model="tab">
